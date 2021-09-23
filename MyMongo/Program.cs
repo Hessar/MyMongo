@@ -2,9 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using MyMongo.Contexts;
-using MyMongo.Models;
-using MyMongo.Services;
-using System.Configuration;
+using MyMongo.Repo.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 

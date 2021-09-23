@@ -1,11 +1,13 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MyMongo.Contexts;
-using MyMongo.Models;
+using MyMongo.Models.Collections;
+using MyMongo.Models.Collections.Users;
+using MyMongo.Repo.Interfaces;
 
-namespace MyMongo.Services
+namespace MyMongo.Repo.Services.Users
 {
-    public class UserService
+    public class UserService: IBaseService<User>
     {
         private readonly IMongoCollection<User> _user;
         public ObjectId _objectid;

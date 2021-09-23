@@ -2,9 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MyMongo.Models;
-using MyMongo.Services;
+using MyMongo.Models.Collections.Users;
+using MyMongo.Repo.Services.Users;
 
-namespace MyMongo.Controllers
+namespace MyMongo.Controllers.Users
 {
     [Route("api/[controller]")]
     [ApiController]
